@@ -30,10 +30,14 @@ int main(){
     vector<vector<int>>ans=subsets(v);
     for(auto &v:ans){
       
+       cout<<"[ ";
         for(int &u:v){
-            cout<<"["<<u<<"]";
+            cout<<u<<" ";
         }
-        cout<<" ";
+        cout<<" ]";
+        
     }
     
 }
+
+
