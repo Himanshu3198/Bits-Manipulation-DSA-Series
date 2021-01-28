@@ -8,9 +8,9 @@ bool isPowerOfTwo(int x)
     int a=x&(x-1);
     int b=(!(x&(x-1)));
     int c= x && (!(x&(x-1)));
-    cout<<"this is a\t"<<a<<" ";
-    cout<<"this is b\t"<<b<<" ";
-    cout<<"this is c\t"<<c<<"\n";
+//     cout<<"this is a\t"<<a<<" ";      
+//     cout<<"this is b\t"<<b<<" ";     dry run
+//     cout<<"this is c\t"<<c<<"\n";
 
     return x &&(!(x&(x-1)));
 }
