@@ -1,3 +1,5 @@
+// CF-714div2
+// B. AND Sequences
 #include <bits/stdc++.h>
 using namespace std;
 
