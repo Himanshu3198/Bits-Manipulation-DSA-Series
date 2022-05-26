@@ -1,3 +1,17 @@
+
+// solution 1
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int res=0;
+        for(int i=0;i<=31;i++){
+            if((1<<i)&n) res++;
+        }
+        return res;
+    }
+};
+
+// solution 2
 #include<bits/stdc++.h>
 #define ll unsigned int
 using namespace std;
