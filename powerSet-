@@ -1,0 +1,22 @@
+class Solution {
+public:
+    long long maxStrength(vector<int>& nums) {
+        
+        int mask=pow(2,nums.size());
+        long long ans=nums[0],curr;
+        
+        for(int m=0;m<mask;m++){
+            curr=1;
+            bool flag=false;
+            for(int i=0;i<nums.size();i++){
+                if(m&(1<<i)) {
+                    curr*=nums[i];
+                    flag=true;
+                }
+            }
+            if(flag)
+            ans=max(ans,curr);
+        }
+        return ans;
+    }
+};
